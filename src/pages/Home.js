@@ -1,11 +1,8 @@
 import { Container } from '@material-ui/core';
-import { useEffect, useState } from 'react';
-import * as parser from 'rss-parser';
-// import React, { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 
 export default function Home() {
-    const [mediaOutlet, setMediaOutlet] = useState([]);
 
     // maybe the following should be useEffect instead...
     const getRSSContent = () => {
@@ -15,9 +12,6 @@ export default function Home() {
         .then(data => console.log(data))
     }
 
-        const getRSS = () => {
-            parser.parseURL('https://mashable.com/rss/')
-        }
        useEffect(() => {
         getRSSContent()
        }, [])
