@@ -6,9 +6,8 @@ export default function Home() {
 
     // maybe the following should be useEffect instead...
     const getRSSContent = () => {
-        fetch('https://mashable.com/rss/')
-        .then(res => res.text())
-        .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+        fetch('https://cube-news-app.netlify.app/.netlify/functions/fetch-rss?url=https://mashable.com/rss/')
+        .then(res => res.json())
         .then(data => console.log(data))
     }
 

@@ -10,7 +10,9 @@ const handler = async (event) => {
     return {
       statusCode: 200,
       body: JSON.stringify(data),
-    
+      headers: {
+        'Access-Control-Allow-Origin': '*'
+      }
     }
   } catch (error) {
     return { statusCode: 500, body: error.toString() }
