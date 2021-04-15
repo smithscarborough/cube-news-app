@@ -7,12 +7,13 @@ export default function Source(props) {
     return (
         <div>
             <Container>
+                <h1>{props.title}</h1>
                 {props.content.map((pieceOfContent) => {
                     const { title, creator, link, pubDate, contentSnippet } = pieceOfContent;
 
                     return (
                         <div>
-                            <Link to={link}><h4>{title}</h4></Link>
+                            <a href={link} target="_blank"><h4>{title}</h4></a>
                             <p>{creator}</p>
                             <p>{pubDate}</p>
                             <p>{contentSnippet}</p>
