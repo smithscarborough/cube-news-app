@@ -37,6 +37,8 @@ export default function Home() {
             <select onChange={changeOutlet}>
                 <option key="Mashable" value="https://mashable.com/rss/">Mashable</option>
                 <option key="Dev" value="https://dev.to/rss">DEV.to</option>
+                <option key="Engadget" value="https://www.engadget.com/rss.xml">Engadget</option>
+                <option key="CSS Tricks" value="https://css-tricks.com/feed/">CSS-Tricks</option>
             </select>
             {content.items.length ? (
         
@@ -44,7 +46,6 @@ export default function Home() {
             ) : (
                 '     Loading...'
             )}
-            {/* <SingleLineGridList content={content} /> */}
         </Container>
     )
 }
