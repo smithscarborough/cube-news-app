@@ -5,6 +5,8 @@ import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import SearchAppBar from './components/SearchAppBar';
 import Home from './pages/Home';
+import News from './pages/News';
+import Tech from './pages/Tech';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -49,10 +51,16 @@ export default function App() {
         >
           {icon}
           </IconButton>
-        <Container>
+        <Container> 
           <Switch>
             <Route path="/" exact>
               <Home />
+            </Route>
+            <Route path="/news" exact>
+              <News />
+            </Route>
+            <Route path="/tech" exact>
+              <Tech />
             </Route>
           </Switch>
         </Container>
