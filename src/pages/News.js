@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import Source from '../components/Source';
 
 
-export default function Home() {
+export default function News() {
     // use state to pass down news content from a given source to the SingleLineGridList component to display the content
     const [content, setContent] = useState({ items: [] });
     const [outlet, setOutlet] = useState('https://www.realclearworld.com/index.xml');
@@ -32,7 +32,7 @@ export default function Home() {
 
     return (
         <Container>
-            <h3>Welcome to Cube News!</h3>
+            <h3>Good news...</h3>
             <h4>News</h4>
             <select onChange={changeOutlet}>
                 <option key="The Hill" value="https://thehill.com/rss/syndicator/19110">The Hill</option>

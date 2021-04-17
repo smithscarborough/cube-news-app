@@ -3,10 +3,10 @@ import { useEffect, useState } from 'react';
 import Source from '../components/Source';
 
 
-export default function Tech() {
+export default function Business() {
     // use state to pass down news content from a given source to the SingleLineGridList component to display the content
     const [content, setContent] = useState({ items: [] });
-    const [outlet, setOutlet] = useState('https://mashable.com/rss/');
+    const [outlet, setOutlet] = useState('https://feeds.a.dj.com/rss/WSJcomUSBusiness.xml');
 
     // maybe the following should be useEffect instead...
     const getRSSContent = (url) => {
@@ -32,16 +32,13 @@ export default function Tech() {
 
     return (
         <Container>
-            <h3>Welcome to Cube News!</h3>
-            <h4>Tech</h4>
+            <h3>Let's get down to business.</h3>
+            <h4>Business</h4>
             <select onChange={changeOutlet}>
-                <option key="Mashable" value="https://mashable.com/rss/">Mashable</option>
-                <option key="Dev" value="https://dev.to/rss">DEV.to</option>
-                <option key="Engadget" value="https://www.engadget.com/rss.xml">Engadget</option>
-                <option key="CSS Tricks" value="https://css-tricks.com/feed/">CSS-Tricks</option>
-                <option key="WSJ Technology" value="https://feeds.a.dj.com/rss/RSSWSJD.xml">Wall Street Journal: Tech</option>
-                <option key="SF Gate" value="https://blog.sfgate.com/techchron/feed/">SF Gate Tech Blog</option>
-                <option key="New York Times Tech" value="https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml">New York Times Tech</option>
+                <option key="WSJ US Business" value="https://feeds.a.dj.com/rss/WSJcomUSBusiness.xml">Wall Street Journal: US Business</option>
+                <option key="WSJ Markets News" value="https://feeds.a.dj.com/rss/RSSMarketsMain.xml">Wall Street Journal: Markets News</option>
+                <option key="Business Insider" value="https://markets.businessinsider.com/rss/news">Business Insider</option>
+                <option key="Business Insider: Analyst Opinions" value="https://markets.businessinsider.com/rss/analysts-opinions">Business Insider: Analyst Opinions</option>
             </select>
             {content.items.length ? (
         

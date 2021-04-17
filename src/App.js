@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import SearchAppBar from './components/SearchAppBar';
+import Business from './pages/Business';
 import Home from './pages/Home';
 import News from './pages/News';
 import Tech from './pages/Tech';
@@ -58,6 +59,9 @@ export default function App() {
             </Route>
             <Route path="/news" exact>
               <News />
+            </Route>
+            <Route path="/business" exact>
+              <Business />
             </Route>
             <Route path="/tech" exact>
               <Tech />
