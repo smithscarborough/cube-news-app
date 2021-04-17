@@ -5,7 +5,7 @@ import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
-import { Button, Menu, MenuItem } from '@material-ui/core';
+import { Box, Button, Menu, MenuItem } from '@material-ui/core';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { withRouter } from 'react-router-dom';
 
@@ -93,11 +93,19 @@ const SearchAppBar = props => {
           </Menu>
           </>
           ) : (
-            <div className={classes.headerOptions}>
+            <div className={classes.headerOptions} >
+              <Box m={1}>
               <Button variant="contained" onClick={() => handleButtonClick('/')}>Home</Button>
+              </Box>
+              <Box m={1}>
               <Button variant="contained" onClick={() => handleButtonClick('/news')}>News</Button>
+              </Box>
+              <Box m={1}>
               <Button variant="contained" onClick={() => handleButtonClick('/business')}>Business</Button>
+              </Box>
+              <Box m={1}>
               <Button variant="contained" onClick={() => handleButtonClick('/tech')}>Tech</Button>
+              </Box>
             </div>
           )}
           </div>
