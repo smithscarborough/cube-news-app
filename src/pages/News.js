@@ -35,6 +35,7 @@ export default function News() {
             <h3>Good news...</h3>
             <h4>NEWS</h4>
             <select onChange={changeOutlet}>
+                <option key="Al Jazeera" value="https://www.aljazeera.com/xml/rss/all.xml">Al Jazeera</option>
                 <option key="Breitbart" value="http://feeds.feedburner.com/breitbart">Breitbart</option>
                 <option key="Chicago Tribune" value="https://www.chicagotribune.com/arcio/rss/category/news/?query=display_date:%5Bnow-2d+TO+now%5D+AND+revision.published:true&sort=display_date:desc#nt=instory-link">Chicago Tribune</option>
                 <option key="CNN" value="http://rss.cnn.com/rss/cnn_topstories.rss">CNN</option>
