@@ -1,6 +1,9 @@
-.App {
-
+html, 
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
+
 
 .container {
   padding: 10px;
@@ -30,4 +33,10 @@
 
 .navbar ul li a.active {
   color: chartreuse;
+}
+
+.anim {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
 }
