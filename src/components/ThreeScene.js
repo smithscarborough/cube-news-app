@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import * as THREE from 'three';
+import lavaImg from '../textures/lava.png';
 
 class ThreeScene extends Component{
 
@@ -23,12 +24,15 @@ class ThreeScene extends Component{
     this.renderer.setSize(width, height)
     this.mount.appendChild(this.renderer.domElement)
     //ADD CUBE
-    const geometry = new THREE.BoxGeometry(2, 2, 2)
-    const texture = new THREE.TextureLoader().load('../textures/lava.jpg')
-    const material = new THREE.MeshBasicMaterial({ color: '#93E9BE' })
+    const geometry = new THREE.BoxGeometry(8, 8, 8)
+    // const material = new THREE.MeshBasicMaterial({ color: '#DFFF00' })
+    const texture = new THREE.TextureLoader().load(lavaImg)
+    const material = new THREE.MeshBasicMaterial({ map: texture })
     this.cube = new THREE.Mesh(geometry, material)
+    this.cube.position.z = -10
+
     this.scene.add(this.cube)
-this.start()
+this.start() 
   }
 
 componentWillUnmount(){
@@ -60,7 +64,7 @@ renderScene = () => {
 render(){
     return(
       <div
-        style={{ width: '90vw', height: '400px' }}
+        style={{ width: '400px', height: '400px' }}
         ref={(mount) => { this.mount = mount }}
       />
     )
