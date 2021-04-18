@@ -90,6 +90,7 @@ const SearchAppBar = props => {
             <MenuItem onClick={() => handleMenuClick('/')}>Home</MenuItem>
             <MenuItem onClick={() => handleMenuClick('/news')}>News</MenuItem>
             <MenuItem onClick={() => handleMenuClick('/tech')}>Tech</MenuItem>
+            <MenuItem onClick={() => handleMenuClick('/sports')}>Sports</MenuItem>
           </Menu>
           </>
           ) : (
@@ -105,6 +106,9 @@ const SearchAppBar = props => {
               </Box>
               <Box m={1}>
               <Button variant="contained" onClick={() => handleButtonClick('/tech')}>Tech</Button>
+              </Box>
+              <Box m={1}>
+              <Button variant="contained" onClick={() => handleButtonClick('/sports')}>Sports</Button>
               </Box>
             </div>
           )}

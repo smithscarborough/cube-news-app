@@ -7,6 +7,7 @@ import SearchAppBar from './components/SearchAppBar';
 import Business from './pages/Business';
 import Home from './pages/Home';
 import News from './pages/News';
+import Sports from './pages/Sports';
 import Tech from './pages/Tech';
 
 const useStyles = makeStyles(theme => ({
@@ -65,6 +66,9 @@ export default function App() {
             </Route>
             <Route path="/tech" exact>
               <Tech />
+            </Route>
+            <Route path="/sports" exact>
+              <Sports />
             </Route>
           </Switch>
         </Container>

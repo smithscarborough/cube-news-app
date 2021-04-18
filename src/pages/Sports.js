@@ -3,10 +3,10 @@ import { useEffect, useState } from 'react';
 import Source from '../components/Source';
 
 
-export default function Business() {
+export default function Sports() {
     // use state to pass down news content from a given source to the SingleLineGridList component to display the content
     const [content, setContent] = useState({ items: [] });
-    const [outlet, setOutlet] = useState('https://feeds.a.dj.com/rss/WSJcomUSBusiness.xml');
+    const [outlet, setOutlet] = useState('https://www.espn.com/espn/rss/news');
 
     // maybe the following should be useEffect instead...
     const getRSSContent = (url) => {
@@ -32,15 +32,15 @@ export default function Business() {
 
     return (
         <Container>
-            <h3>Let's get down to business...</h3>
-            <h4>BUSINESS</h4>
+            <h3>Play ball...</h3>
+            <h4>SPORTS</h4>
             <select onChange={changeOutlet}>
-                <option key="Business Insider" value="https://markets.businessinsider.com/rss/news">Business Insider</option>
-                <option key="Business Insider: Analyst Opinions" value="https://markets.businessinsider.com/rss/analysts-opinions">Business Insider: Analyst Opinions</option>
-                <option key="Las Vegas Sun: Business" value="https://lasvegassun.com/feeds/headlines/business/">Las Vegas Sun: Business</option>
-                <option key="Reuters Business" value="https://www.reutersagency.com/feed/?best-topics=business-finance&post_type=best">Reuters Business & Finance</option>
-                <option key="WSJ Markets News" value="https://feeds.a.dj.com/rss/RSSMarketsMain.xml">Wall Street Journal: Markets News</option>
-                <option key="WSJ US Business" value="https://feeds.a.dj.com/rss/WSJcomUSBusiness.xml">Wall Street Journal: US Business</option>
+                <option key="ESPN" value="https://www.espn.com/espn/rss/news">ESPN</option>
+                <option key="FOX Sports" value="https://api.foxsports.com/v1/rss?partnerKey=zBaFxRyGKCfxBagJG9b8pqLyndmvo7UU">FOX Sports</option>
+                <option key="Yahoo! Sports" value="https://sports.yahoo.com/rss/">Yahoo! Sports</option>
+                <option key="Bleacher Report" value="https://bleacherreport.com/rss-multi-sport">Bleacher Report</option>
+                <option key="Reuters Sports" value="https://www.reutersagency.com/feed/?best-topics=sports&post_type=best">Reuters Sports</option>
+                <option key="The Sydney Morning Herald: Sport" value="https://www.smh.com.au/rss/sport.xml">The Sydney Morning Herald: Sport</option>
             </select>
             {content.items.length ? (
         
