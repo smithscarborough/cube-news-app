@@ -36,7 +36,7 @@ export default function Tech() {
                 <h3>Hello, World...</h3>
                 <h4>TECH</h4>
                 <select onChange={changeOutlet}>
-                    <option key="default" value="" disabled selected hidden>Select your option</option>
+                    <option key="default" value="" disabled selected hidden>Select an outlet</option>
                     <option key="ars technica" value="https://arstechnica.com/feed/">ars technica</option>
                     <option key="CSS Tricks" value="https://css-tricks.com/feed/">CSS-Tricks</option>
                     <option key="The Denver Post" value="http://feeds.denverpost.com/dp-business-technology">The Denver Post: Tech</option>

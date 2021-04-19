@@ -36,7 +36,7 @@ export default function Business() {
                 <h3>Let's get down to business...</h3>
                 <h4>BUSINESS</h4>
                 <select onChange={changeOutlet}>
-                    <option key="default" value="" disabled selected hidden>Select your option</option>
+                    <option key="default" value="" disabled selected hidden>Select an outlet</option>
                     <option key="Business Insider" value="https://markets.businessinsider.com/rss/news">Business Insider</option>
                     <option key="Business Insider: Analyst Opinions" value="https://markets.businessinsider.com/rss/analysts-opinions">Business Insider: Analyst Opinions</option>
                     <option key="Financial Times" value="https://www.ft.com/news-feed">Financial Times</option>

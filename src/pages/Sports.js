@@ -36,7 +36,7 @@ export default function Sports() {
                 <h3>Next up...</h3>
                 <h4>SPORTS</h4>
                 <select onChange={changeOutlet}>
-                    <option key="default" value="" disabled selected hidden>Select your option</option>
+                    <option key="default" value="" disabled selected hidden>Select an outlet</option>
                     <option key="ESPN" value="https://www.espn.com/espn/rss/news">ESPN</option>
                     <option key="FOX Sports" value="https://api.foxsports.com/v1/rss?partnerKey=zBaFxRyGKCfxBagJG9b8pqLyndmvo7UU">FOX Sports</option>
                     <option key="Yahoo! Sports" value="https://sports.yahoo.com/rss/">Yahoo! Sports</option>
