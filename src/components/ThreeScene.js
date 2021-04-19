@@ -18,9 +18,11 @@ class ThreeScene extends Component{
     );
     this.camera.position.z = 4
     //ADD RENDERER
-    this.renderer = new THREE.WebGLRenderer({ antialias: true });
+    // this.renderer = new THREE.WebGLRenderer({ antialias: true });
+    this.renderer = new THREE.WebGLRenderer({ alpha: true });
     
-    this.renderer.setClearColor('#000000')
+    
+    // this.renderer.setClearColor('#000000')
     this.renderer.setSize(width, height)
     this.mount.appendChild(this.renderer.domElement)
     //ADD CUBE
@@ -64,7 +66,7 @@ renderScene = () => {
 render(){
     return(
       <div
-        style={{ width: '400px', height: '400px' }}
+        style={{ width: '400px', height: '400px'}}
         ref={(mount) => { this.mount = mount }}
       />
     )
