@@ -89,6 +89,7 @@ const SearchAppBar = props => {
           >
             <MenuItem onClick={() => handleMenuClick('/')}>Home</MenuItem>
             <MenuItem onClick={() => handleMenuClick('/news')}>News</MenuItem>
+            <MenuItem onClick={() => handleMenuClick('/business')}>Business</MenuItem>
             <MenuItem onClick={() => handleMenuClick('/tech')}>Tech</MenuItem>
             <MenuItem onClick={() => handleMenuClick('/sports')}>Sports</MenuItem>
           </Menu>
