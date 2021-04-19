@@ -4,7 +4,6 @@ body {
   overflow-x: hidden;
 }
 
-
 .container {
   padding: 10px;
 }
@@ -41,7 +40,5 @@ body {
   background-color: black;
 }
 
-.footer {
-  font-size: x-small;
-  bottom: absolute;
-}
+
+

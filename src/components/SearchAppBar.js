@@ -56,7 +56,7 @@ const SearchAppBar = props => {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <Typography className={classes.title} variant="h6">
+          <Typography className={classes.title} variant="h6" onClick={() => handleMenuClick('/')}>
             Cube News
           </Typography>
           {/* navbar-to-burger media query */}

@@ -33,13 +33,13 @@ export default function Sports() {
     return (
         <Container>
             <Container align="center">
-                <h3>Play ball...</h3>
+                <h3>Next up...</h3>
                 <h4>SPORTS</h4>
                 <select onChange={changeOutlet}>
+                    <option key="default" value="" disabled selected hidden>Select your option</option>
                     <option key="ESPN" value="https://www.espn.com/espn/rss/news">ESPN</option>
                     <option key="FOX Sports" value="https://api.foxsports.com/v1/rss?partnerKey=zBaFxRyGKCfxBagJG9b8pqLyndmvo7UU">FOX Sports</option>
                     <option key="Yahoo! Sports" value="https://sports.yahoo.com/rss/">Yahoo! Sports</option>
-                    <option key="Bleacher Report" value="https://bleacherreport.com/rss-multi-sport">Bleacher Report</option>
                     <option key="Reuters Sports" value="https://www.reutersagency.com/feed/?best-topics=sports&post_type=best">Reuters Sports</option>
                     <option key="The Sydney Morning Herald: Sport" value="https://www.smh.com.au/rss/sport.xml">The Sydney Morning Herald: Sport</option>
                 </select>

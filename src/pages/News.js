@@ -36,6 +36,7 @@ export default function News() {
                 <h3 align="center">Good news...</h3>
                 <h4 align="center">NEWS</h4>
                 <select align="center" onChange={changeOutlet}>
+                    <option key="default" value="" disabled selected hidden>Select your option</option>
                     <option key="Al Jazeera" value="https://www.aljazeera.com/xml/rss/all.xml">Al Jazeera</option>
                     <option key="BBC" value="http://feeds.bbci.co.uk/news/england/london/rss.xml">BBC</option>
                     <option key="Breitbart" value="http://feeds.feedburner.com/breitbart">Breitbart</option>

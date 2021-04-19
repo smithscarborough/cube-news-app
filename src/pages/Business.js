@@ -36,12 +36,12 @@ export default function Business() {
                 <h3>Let's get down to business...</h3>
                 <h4>BUSINESS</h4>
                 <select onChange={changeOutlet}>
+                    <option key="default" value="" disabled selected hidden>Select your option</option>
                     <option key="Business Insider" value="https://markets.businessinsider.com/rss/news">Business Insider</option>
                     <option key="Business Insider: Analyst Opinions" value="https://markets.businessinsider.com/rss/analysts-opinions">Business Insider: Analyst Opinions</option>
                     <option key="Financial Times" value="https://www.ft.com/news-feed">Financial Times</option>
                     <option key="Harvard Business Review" value="http://feeds.hbr.org/harvardbusiness">Harvard Business Review</option>
                     <option key="Las Vegas Sun: Business" value="https://lasvegassun.com/feeds/headlines/business/">Las Vegas Sun: Business</option>
-                    <option key="Nasdaq Stocks" value="https://www.nasdaq.com/feed/rssoutbound?category=Technology">Nasdaq Stocks</option>
                     <option key="Reddit: bitcoin" value="https://www.reddit.com/r/Bitcoin/.rss">Reddit: r/bitcoin</option>
                     <option key="Reddit: dogecoin" value="https://www.reddit.com/r/dogecoin/.rss">Reddit: r/dogecoin</option>
                     <option key="Reddit: stocks" value="https://www.reddit.com/r/stocks/.rss">Reddit: r/stocks</option>
