@@ -56,6 +56,7 @@ export default function News() {
                 <option key="Independent Online" value="https://rss.iol.io/iol/news/south-africa">IOL: South Africa</option>
                 <option key="One America News" value="https://www.oann.com/category/newsroom/feed/">OAN</option>
                 <option key="Real Clear World" value="https://www.realclearworld.com/index.xml">Real Clear World</option>
+                <option key="Reddit: News" value="https://www.reddit.com/r/news/.rss">Reddit: r/news</option>
                 <option key="Reuters" value="https://www.reutersagency.com/feed/?taxonomy=best-topics&post_type=best">Reuters</option>
                 <option key="SF Gate" value="https://www.sfgate.com/bayarea/feed/Bay-Area-News-429.php">SF Gate</option>
                 <option key="The Sydney Morning Herald" value="https://www.smh.com.au/rss/feed.xml">The Sydney Morning Herald</option>

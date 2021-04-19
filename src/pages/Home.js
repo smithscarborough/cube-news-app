@@ -5,9 +5,11 @@ import ThreeScene from '../components/ThreeScene';
 
 export default function Home() {
     return (
-        <Container>
-            <h3 textAlign="center">Welcome to Cube News!</h3>
+        <Container align="center">
+            <h3>Welcome to Cube News!</h3>
+            <h4>Because every story has a different side.</h4>
             <ThreeScene />
+            <h5>&#169; Copyright 2021 Cube News</h5>
         </Container>
     )
 }
