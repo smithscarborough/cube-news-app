@@ -26,7 +26,7 @@ class ThreeScene extends Component{
     this.renderer.setSize(width, height)
     this.mount.appendChild(this.renderer.domElement)
     //ADD CUBE
-    const geometry = new THREE.BoxGeometry(8, 8, 8)
+    const geometry = new THREE.BoxGeometry(9.5, 9.5, 9.5)
     // const material = new THREE.MeshBasicMaterial({ color: '#DFFF00' })
     const texture = new THREE.TextureLoader().load(lavaImg)
     const material = new THREE.MeshBasicMaterial({ map: texture })
