@@ -10,16 +10,6 @@ import News from './pages/News';
 import Tech from './pages/Tech';
 import './App.css';
 
-// const useStyles = makeStyles(theme => ({
-//   root: {
-//     marginBottom: theme.spacing(2),
-//     flexGrow: 1
-//   },
-//   title: {
-//     flexGrow: 1
-//   }
-// }));
-
 export default function App() {
 
   const light = {
@@ -33,7 +23,7 @@ export default function App() {
       type: 'dark'
     }
   };
-  
+
 
   const [theme, setTheme] = useState(true);
   // const classes = useStyles();
