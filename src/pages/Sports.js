@@ -39,9 +39,9 @@ export default function Sports() {
                     <option key="default" value="" disabled selected hidden>Select an outlet</option>
                     <option key="ESPN" value="https://www.espn.com/espn/rss/news">ESPN</option>
                     <option key="FOX Sports" value="https://api.foxsports.com/v1/rss?partnerKey=zBaFxRyGKCfxBagJG9b8pqLyndmvo7UU">FOX Sports</option>
-                    <option key="Yahoo! Sports" value="https://sports.yahoo.com/rss/">Yahoo! Sports</option>
                     <option key="Reuters Sports" value="https://www.reutersagency.com/feed/?best-topics=sports&post_type=best">Reuters Sports</option>
                     <option key="The Sydney Morning Herald: Sport" value="https://www.smh.com.au/rss/sport.xml">The Sydney Morning Herald: Sport</option>
+                    <option key="Yahoo! Sports" value="https://sports.yahoo.com/rss/">Yahoo! Sports</option>
                 </select>
             </Container>
             {content.items.length ? (

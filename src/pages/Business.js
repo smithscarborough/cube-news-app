@@ -2,7 +2,6 @@ import { Container } from '@material-ui/core';
 import { useEffect, useState } from 'react';
 import Source from '../components/Source';
 
-
 export default function Business() {
     // use state to pass down news content from a given source to the SingleLineGridList component to display the content
     const [content, setContent] = useState({ items: [] });

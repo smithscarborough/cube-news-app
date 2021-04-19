@@ -1,8 +1,6 @@
 import { Box, Container } from '@material-ui/core';
 import ThreeScene from '../components/ThreeScene';
 
-
-
 export default function Home() {
     return (
         <Container align="center">

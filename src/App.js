@@ -1,14 +1,14 @@
 import { Container, createMuiTheme, CssBaseline, IconButton, ThemeProvider } from '@material-ui/core';
 import { Brightness3, Brightness7 } from '@material-ui/icons';
-import React, { useState } from 'react';
-import { Route, Switch } from 'react-router-dom';
-import './App.css';
 import SearchAppBar from './components/SearchAppBar';
+import { Route, Switch } from 'react-router-dom';
+import React, { useState } from 'react';
 import Business from './pages/Business';
+import Sports from './pages/Sports';
 import Home from './pages/Home';
 import News from './pages/News';
-import Sports from './pages/Sports';
 import Tech from './pages/Tech';
+import './App.css';
 
 // const useStyles = makeStyles(theme => ({
 //   root: {

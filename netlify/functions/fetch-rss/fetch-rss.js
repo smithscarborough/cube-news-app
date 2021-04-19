@@ -1,6 +1,5 @@
-// this is a serverless function that we setup through netlify 
+// this is a serverless function that we setup through netlify  
 // it works with a single url (instead of having to set up an entire BE)
-
 let Parser = require('rss-parser');
 let parser = new Parser();
 

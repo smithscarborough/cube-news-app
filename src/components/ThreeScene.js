@@ -1,6 +1,6 @@
+import lavaImg from '../textures/lava.png';
 import React, { Component } from 'react';
 import * as THREE from 'three';
-import lavaImg from '../textures/lava.png';
 
 class ThreeScene extends Component{
 
