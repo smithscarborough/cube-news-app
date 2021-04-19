@@ -1,4 +1,4 @@
-import { Container, createMuiTheme, CssBaseline, IconButton, makeStyles, ThemeProvider, Typography } from '@material-ui/core';
+import { Container, createMuiTheme, CssBaseline, IconButton, ThemeProvider } from '@material-ui/core';
 import { Brightness3, Brightness7 } from '@material-ui/icons';
 import React, { useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
@@ -10,15 +10,15 @@ import News from './pages/News';
 import Sports from './pages/Sports';
 import Tech from './pages/Tech';
 
-const useStyles = makeStyles(theme => ({
-  root: {
-    marginBottom: theme.spacing(2),
-    flexGrow: 1
-  },
-  title: {
-    flexGrow: 1
-  }
-}));
+// const useStyles = makeStyles(theme => ({
+//   root: {
+//     marginBottom: theme.spacing(2),
+//     flexGrow: 1
+//   },
+//   title: {
+//     flexGrow: 1
+//   }
+// }));
 
 export default function App() {
 
@@ -36,7 +36,7 @@ export default function App() {
   
 
   const [theme, setTheme] = useState(true);
-  const classes = useStyles();
+  // const classes = useStyles();
   const icon = !theme ? <Brightness7 /> : <Brightness3 />;
   const appliedTheme = createMuiTheme(theme ? light : dark);
 

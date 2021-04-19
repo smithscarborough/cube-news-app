@@ -1,7 +1,7 @@
 // testing this component out in place of SingleLineGridList.js (a material-ui component)
 import { Container } from '@material-ui/core'
 import React from 'react'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 export default function Source(props) {
     return (
@@ -13,7 +13,7 @@ export default function Source(props) {
 
                     return (
                         <div>
-                            <a href={link} target="_blank"><h4>{title}</h4></a>
+                            <a href={link} target="_blank" rel="noreferrer"><h4>{title}</h4></a>
                             <p>{creator}</p>
                             <p>{pubDate}</p>
                             <p>{contentSnippet}</p>
