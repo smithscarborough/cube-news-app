@@ -25,6 +25,9 @@
 ###### Easily switch between outlets via dropdown menu for a streamlined news reading experience:
 ![Screen Shot 2021-04-24 at 11 43 28 AM](https://user-images.githubusercontent.com/68121283/115966354-d951f500-a4f2-11eb-9fa1-3596388635d4.png)
 
+###### Mobile-responsive design for fast news on-the-go:
+![Screen Shot 2021-04-24 at 11 51 57 AM](https://user-images.githubusercontent.com/68121283/115966520-8dec1680-a4f3-11eb-8d0b-6c8707861f73.png)
+
 
 
 
