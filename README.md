@@ -2,7 +2,7 @@
 
 ### Because there's different sides to every story.
 
-#### Cube News is a serverless, RSS news aggregator application which pulls the latest, breaking stories from top media outlets, with categories in news, business, tech, and sports.
+#### Cube News is a serverless, RSS news aggregator application which pulls the latest, breaking stories from top media outlets from around the world, with categories in news, business, tech, and sports.
 
 ##### TECHNOLOGIES USED:
 * React.js
