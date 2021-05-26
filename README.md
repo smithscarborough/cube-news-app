@@ -1,4 +1,4 @@
-# [Cube News](https://cube-news-app.netlify.app/): 
+# Cube News - https://cube-news-app.netlify.app/
 
 ### Because there's different sides to every story.
 
