@@ -1,3 +1,39 @@
+# Cube News - https://cube-news-app.netlify.app/
+
+### Because there's different sides to every story.
+
+#### Cube News is a serverless, RSS news aggregator application which pulls the latest, breaking stories from top media outlets from around the world, including categories in news, business, tech, and sports.
+
+##### TECHNOLOGIES USED:
+* React.js
+* React Router
+* Material-UI
+* CSS
+* Three.js
+* Context API (for optional light/dark mode)
+* Netlify serverless function
+
+###### Light-mode:
+![light-mode-gif](https://user-images.githubusercontent.com/68121283/115965782-59c32680-a4f0-11eb-82ef-420de3615648.gif)
+
+###### Dark-mode:
+![dark-mode-gif](https://user-images.githubusercontent.com/68121283/115965808-78292200-a4f0-11eb-8f02-3a93d6a7ce80.gif)
+
+###### RSS feeds bring you the latest breaking news stories from top media outlets from around the world:
+![Screen Shot 2021-04-24 at 11 42 51 AM](https://user-images.githubusercontent.com/68121283/115966276-706a7d00-a4f2-11eb-8a84-f7af71c9f999.png)
+
+###### Easily switch between outlets via dropdown menu for a streamlined news reading experience:
+![Screen Shot 2021-04-24 at 11 43 28 AM](https://user-images.githubusercontent.com/68121283/115966354-d951f500-a4f2-11eb-9fa1-3596388635d4.png)
+
+###### Mobile-responsive design for fast news on-the-go:
+![Screen Shot 2021-04-24 at 11 51 57 AM](https://user-images.githubusercontent.com/68121283/115966520-8dec1680-a4f3-11eb-8d0b-6c8707861f73.png)
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
