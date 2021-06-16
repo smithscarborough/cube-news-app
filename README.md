@@ -1,4 +1,4 @@
-# Cube News - https://cube-news-app.netlify.app/
+# Cube News - https://www.cubenews.org/
 
 ### Because there's different sides to every story.
 
